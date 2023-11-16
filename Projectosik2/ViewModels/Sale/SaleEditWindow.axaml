@@ -1,0 +1,38 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:projectosik2="clr-namespace:Projectosik2"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Projectosik2.ViewModels.Sale.SaleEditWindow"
+        Title="SaleEditWindow"
+        Height="400"
+        Width="400"
+        x:DataType="projectosik2:Sale">
+        <StackPanel>
+                <TextBox
+                        x:Name = "NewSD"
+                        Text = "{Binding Sale_Date}"
+                        Watermark="New sale dale">
+                </TextBox>
+                <TextBox
+                        x:Name = "NewPhone"
+                        Text = "{Binding Price }"
+                        Watermark="New price">
+                </TextBox>
+                <TextBox
+                        x:Name = "NewProduct"
+                        Text = "{Binding Product }"
+                        Watermark="New product">
+                </TextBox>
+                <TextBox
+                        x:Name = "NewEmail"
+                        Text = "{Binding  Client}"
+                        Watermark="New client">
+                </TextBox>
+                <Panel Name="Menu" Width="200" Height="230" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                        <Button Content ="Save" Name="SaveBtn" Background="Red" VerticalAlignment="Bottom" Margin="0 20 0 0" Width="80" Foreground="Black" HorizontalContentAlignment="Center" Click="SaveBtn_OnClick"></Button>
+                        <Button Content ="Cancel" Name="CancelBtn" Background="Red" VerticalAlignment="Bottom" Margin=" 80 20 0 0" Width="80" Foreground="Black" HorizontalContentAlignment="Center" Click="CancelBtn_OnClick"></Button>
+                </Panel>
+        </StackPanel>
+</Window>

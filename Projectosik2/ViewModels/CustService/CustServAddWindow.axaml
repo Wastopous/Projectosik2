@@ -1,0 +1,53 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:projectosik21="clr-namespace:Projectosik2"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Projectosik2.ViewModels.CustService.CustServAddWindow"
+        Title="CustServAddWindow"
+        Height="400"
+        Width="400"
+        x:DataType="projectosik21:CustServ">
+        <StackPanel>
+                <TextBox
+                        x:Name = "NewAD"
+                        Text = "{Binding Application_Date}"
+                        Watermark="New application date">
+                </TextBox>
+                <TextBox
+                        x:Name = "NewAT"
+                        Text = "{Binding Application_Date}"
+                        Watermark="New application date">
+                </TextBox>
+                <TextBox
+                        x:Name = "NewAS"
+                        Text = "{Binding Application_Date }"
+                        Watermark="New application date">
+                </TextBox>
+                <TextBox
+                        x:Name = "NewPD"
+                        Text = "{Binding Problem_Description }"
+                        Watermark="New problem description">
+                </TextBox>
+                <TextBox
+                        x:Name = "NewClient"
+                        Text = "{Binding Client}"
+                        Watermark="New client ">
+                </TextBox>
+                <TextBox
+                        x:Name = "NewEmployee"
+                        Text = "{Binding Employee}"
+                        Watermark="New employee">
+                </TextBox>
+                <TextBox
+                        x:Name = "NewMarketing"
+                        Text = "{Binding Marketing}"
+                        Watermark="New marketing">
+                </TextBox>
+                <Panel Name="Menu" Width="200" Height="230" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                        <Button Content ="Save" Name="SaveBtn" Background="Red" VerticalAlignment="Bottom" Margin="0 20 0 0" Width="80" Foreground="Black" HorizontalContentAlignment="Center" Click="SaveBtn_OnClick"></Button>
+                        <Button Content ="Cancel" Name="CancelBtn" Background="Red" VerticalAlignment="Bottom" Margin=" 80 20 0 0" Width="80" Foreground="Black" HorizontalContentAlignment="Center" Click="CancelBtn_OnClick"></Button>
+                </Panel>
+        </StackPanel>
+</Window>

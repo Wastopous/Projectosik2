@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectosik2", "Projectosik2\Projectosik2.csproj", "{A748FE49-6562-42FD-9D92-FAD2B7584FA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A748FE49-6562-42FD-9D92-FAD2B7584FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A748FE49-6562-42FD-9D92-FAD2B7584FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A748FE49-6562-42FD-9D92-FAD2B7584FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A748FE49-6562-42FD-9D92-FAD2B7584FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
